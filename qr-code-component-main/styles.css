@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.mainContainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.headText,
+.paragraphText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.headText h3 {
+    width: 220px;
+}
+
+.paragraphText p {
+    width: 250px;
+}

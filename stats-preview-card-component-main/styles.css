@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.mainContainer {
+    width: 800px;
+    height: 400px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+}
+
+.sectionOne,
+.sectionTwo {
+    width: 50%;
+}
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.5rem;
+}
+
+.sectionTwo {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.447);
+    position: absolute;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paraText p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats p {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.paraText p,
+.stats p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.statsComp h3,
+.statsTemplates h3,
+.statsQueries h3 {
+    margin: 0 0 5px 0;
+}
+
+.textWrapper {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 700px;
+    }
+
+    .sectionOne,
+    .sectionTwo {
+        width: 100%;
+    }
+
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .sectionTwo {
+        height: 40%;
+        position: relative;
+        display: flex;
+    }
+
+    .textWrapper {
+        height: 50%;
+    }
+
+    .headText,
+    .paraText {
+        text-align: center;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 40%;
+    }
+}

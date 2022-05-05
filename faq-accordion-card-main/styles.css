@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+
+.sectionOne,
+.sectionTwo {
+    width: 50%;
+}
+
+.sectionOne {
+    height: 100%;
+    overflow: hidden;
+}
+
+.sectionTwo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1 {
+    position: absolute;
+    bottom: 230px;
+    left: 65px;
+}
+
+/* IMAGES */
+
+.women {
+    position: relative;
+    top: 60px;
+    right: 80px;
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    top: 190px;
+    left: -90px;
+    z-index: 2;
+}
+
+.pattern {
+    position: relative;
+    bottom: 650px;
+    right: 600px;
+}
+
+/* SECTION 2 */
+
+.infoWrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.questionAnswer {
+    height: 100%;
+    width: 70%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.questionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.8rem 0 0.8rem 0;
+}
+
+.questionContainer img {
+    cursor: pointer;
+}
+
+.answer {
+    margin: 10px 0 10px 0;
+    color: hsl(240, 6%, 50%);
+}
+
+hr {
+    border: 1px solid hsl(240, 5%, 91%);
+}
+
+.arrow {
+    transition: all 0.5s ease;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 300px;
+        min-height: 550px;
+        flex-direction: column;
+    }
+
+    .sectionOne {
+        overflow: visible;
+    }
+
+    .sectionTwo {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .women {
+        top: -50px;
+        left: 70px;
+    }
+    
+    .box {
+        display: none;
+    }
+
+    .pattern {
+        position: relative;
+        top: -100px;
+        right: -60px;
+        width: 160px;
+    }
+
+    h1 {
+        bottom: 230px;
+        left: 110px;
+    }
+}

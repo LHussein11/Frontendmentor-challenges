@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+
+.sectionOne {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sectionTwo {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.sectionThree {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.textWrapper {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.headText h1 {
+    color: hsl(0, 0%, 95%);
+}
+
+.paraText p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 0.7cm;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: .7rem;
+    width: 140px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnOne {
+    color: hsl(31, 77%, 52%);
+}
+.btnTwo {
+    color: hsl(184, 100%, 22%);
+}
+.btnThree {
+    color: hsl(179, 100%, 13%);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 4rem 0 4rem 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sections {
+        width: 300px;
+        min-height: 450px;
+    }
+}

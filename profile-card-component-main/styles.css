@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: left -300px top -600px, bottom -500px right -400px;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    height: 500px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    width: 100%;
+}
+
+.head img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+.imgContainer {
+    background-color: #fff;
+    width: 105px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    bottom: 60px;
+    left: 0px;
+}
+
+.imgContainer img {
+    border-radius: 50%;
+}
+
+.personInfo {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personInfo h3:nth-child(2), h4{
+    color: hsl(0, 0%, 59%);
+}
+
+.personInfo, h4 {
+    position: relative;
+    bottom: 40px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.2rem;
+}
+
+.stats p {
+    color: hsl(0, 0%, 59%);
+}
+
+.statsFollowers h3,
+.statsLikes h3,
+.statsPhotos h3 {
+    margin: 0 0 5px 0;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-position: left -120px top -100px, bottom -120px right -120px;
+        background-size: 300px;
+    }
+
+    .container {
+        height: 500px;
+        width: 90%;
+    }
+}

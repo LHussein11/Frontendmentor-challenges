@@ -1,0 +1,44 @@
+
+
+body {
+    background-color: #0d1a2d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+}
+
+.card {
+    width: 300px;
+    min-height: 500px;
+    background-color: #15273f;
+}
+
+.imgContainer {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    width: 250px;
+    height: 250px;
+
+}
+
+
+/*
+  <div class="container">
+    <main class="card"> 
+      <div class="imgContainer">
+        <img src="./images/image-equilibrium.jpg" alt="">
+      </div>
+    </main>
+  </div>
+*/
