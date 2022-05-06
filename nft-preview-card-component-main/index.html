@@ -6,13 +6,38 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
   <div class="container">
     <main class="card"> 
       <div class="imgContainer">
-        <img src="./images/image-equilibrium.jpg" alt="">
+        <img src="./images/image-equilibrium.jpg" alt="nftimage">
+        <div class="overlay"></div>
+      </div>
+      <div class="infoContainer">
+        <p>Equilibrium #3429</p>
+      </div>
+      <div class="textWrapper">
+        <p>Our Equilibrium collection promotes balance and calm</p>
+      </div>
+      <div class="priceDate">
+        <div class="coinInfo">
+          <img src="images/icon-ethereum.svg" alt="coin">
+          <p class="coin">0.041ETH</p>
+        </div>
+        <div class="countDown">
+          <img src="images/icon-clock.svg" alt="clock">
+          <p>3 days left</p>
+        </div>
+      </div>
+      <hr>
+      <div class="personContainer">
+        <img src="images/image-avatar.png" alt="personimage">
+        <p>Creation of <span>Jules Wyvern</span></p>
       </div>
     </main>
   </div>

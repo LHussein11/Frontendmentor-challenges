@@ -1,4 +1,8 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
     background-color: #0d1a2d;
@@ -6,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Outfit', sans-serif;
 }
 
 .container {
@@ -16,6 +21,11 @@ body {
     width: 300px;
     min-height: 500px;
     background-color: #15273f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: hsl(215, 51%, 70%);
 }
 
 .imgContainer {
@@ -24,10 +34,120 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
 }
 
 .imgContainer img {
-    width: 250px;
+    width: 85%;
     height: 250px;
+    border-radius: 5px;
+}
 
+.infoContainer,
+.textWrapper,
+.priceDate,
+.personContainer {
+  margin: 0 0 10px 0;
+}
+
+.personContainer {
+  margin: 10px 0 0 0;
+}
+
+hr {
+  margin: 10px 0 10px 0;
+  border: 1px solid hsl(215, 51%, 70%);
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 256px;
+  font-weight: 600;
+}
+
+.infoContainer p,
+.personContainer p span {
+  color: hsl(0, 0%, 100%);
+}
+
+.textWrapper {
+  width: 256px;
+}
+
+.priceDate {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.coinInfo {
+  width: 34%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.coinInfo p {
+  color: hsl(178, 100%, 50%);
+}
+
+.coinInfo img,
+.countDown img {
+  margin: 0 10px 0 0;
+}
+
+.countDown {
+  width: 34%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.personContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 256px;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid hsla(215, 26%, 45%, 0.29);
+}
+
+.personContainer img {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.imgContainer:hover:after {
+  content: url('../images/icon-view.svg');
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  height: 85%;
+  width: 255px;
+  border-radius: 5px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+}
+
+.infoContainer p:hover,
+.personContainer p span:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all 1s ease;
+  cursor: pointer;
 }
