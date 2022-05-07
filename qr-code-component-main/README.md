@@ -1,4 +1,4 @@
-# Live site: paltry-bucket.surge.sh
+# Live site: https://paltry-bucket.surge.sh/
 
 # Frontend Mentor - QR code component
 
