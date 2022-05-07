@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-position: left 0 top 0, right -120px bottom 0;
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    color: #fff;
+}
+
+/* SECTION ONE */
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionOne {
+    display: flex;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainText h1 {
+    color: hsl(300, 43%, 22%);
+    width: 60%;
+    font-size: 3rem;
+}
+
+.mainText p {
+    width: 70%;
+    line-height: .6cm;
+    color: hsl(303, 10%, 53%);
+}
+
+.card {
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    padding: 0.9rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.card h4 {
+    color: hsl(300, 43%, 22%);;
+}
+
+.starWrapper {
+    margin: 0 25px 0 0;
+}
+
+.card:nth-child(2) {
+    left: 20px;
+}
+
+.card:nth-child(3) {
+    left: 40px;
+}
+
+.ratingsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 35%;
+}
+
+/* SECTION TWO */
+
+.sectionTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigCard {
+    width: 350px;
+    height: 250px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.imgInfoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 30px 0;
+}
+
+.imgInfoWrapper img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+.status {
+    color: hsl(333, 80%, 67%);
+}
+
+.bigCard:nth-child(2) {
+    top: 20px;
+}
+.bigCard:nth-child(3) {
+    top: 40px;
+}
+
+@media only screen and (max-width: 375px){
+
+    .sectionOne {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .mainText {
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 20px 0;
+    }
+
+    .mainText {
+        width: 100%;
+    }
+
+    .mainText h1 {
+        font-size: 2rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+
+    .mainText p {
+        width: 80%;
+    }
+
+    .ratingsContainer {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card:nth-child(2) {
+        left: 0;
+    }
+    
+    .card:nth-child(3) {
+        left: 0;
+    }
+
+    /* SECTION TWO MEDIA */
+    
+    .sectionTwo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bigCard {
+        margin: 20px 0 0 0;
+        width: 80%;
+    }
+}
